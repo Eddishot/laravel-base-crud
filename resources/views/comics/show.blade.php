@@ -13,8 +13,14 @@
         </h1>
         <p>
             {{$comic->series}}
-        </p>
     </div>
-    
+   <a href="{{route('comics.edit', $comic->id)}}">modifica</a>>
+   <form action="{{route('comics.destroy', $comic->id)}}" method="post">
+    @csrf
+        @method("DELETE")
+       <input type="submit" value="elimina">
+   </form>
+
+   
 </body>
 </html>
