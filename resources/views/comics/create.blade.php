@@ -2,12 +2,12 @@
 @section("content")
 
 
-<form action="{{route("comics.store")}}" methods="post">
+<form action="{{route("comics.store")}}" method="post">
     @csrf
 
     <div class="mb-3">
         <label for="form-title" class="form-label">Title</label>
-        <input type="text" class="form-control"  {{ $errors->has("title") ? 'is-invalid' : '' }}"  name="title" id="form-title" >
+        <input type="text" class="form-control"  {{ $errors->has("title") ? 'is-invalid' : '' }}  name="title" id="form-title" >
     </div>
     {{-- <div class="mb-3">
         <label for="form-description" class="form-label">description/label>
@@ -19,7 +19,7 @@
     </div> --}}
     <div class="mb-3">
         <label for="form-series" class="form-label">series</label>
-        <input type="text" class="form-control"  {{ $errors->has("title") ? 'is-invalid' : '' }}"  name="series" id="form-series" >
+        <input type="text" class="form-control"  {{ $errors->has("title") ? 'is-invalid' : '' }}  name="series" id="form-series" >
     </div>
 
     <div>
