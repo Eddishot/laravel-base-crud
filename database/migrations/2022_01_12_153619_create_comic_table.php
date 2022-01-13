@@ -16,10 +16,10 @@ class CreateComicTable extends Migration
         Schema::create('comic', function (Blueprint $table) {
             $table->id();
             $table->string("title", 255); 
-            $table->text("description");
-            $table->float("price",8, 2 );
+            // $table->text("description");
+            // $table->float("price",8, 2 );
             $table->string("series", 255);
-            $table->year("sale_date",);
+            // $table->year("sale_date",);
             $table->timestamps();
         });
     }
